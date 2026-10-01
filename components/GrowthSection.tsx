@@ -13,9 +13,9 @@ export default function GrowthSection() {
     <section className="bg-[#FAFAFA] from-[#F3FBD8] via-white to-[#E6ECFF] py-24">
       <div className="mx-auto grid w-9/10 items-center gap-6 px-6 lg:grid-cols-2">
         <div className="w-[574px] ">
-          <h2 className="max-w-[574px] text-[44px] font-semibold leading-tight text-gray-900">
+          <p className="max-w-[80%] text-[20px] md:text-[25px] lg:text-[30px]  xl:text-[44px] font-semibold leading-tight text-[#242528]">
             Your Path to Professional Growth Starts Here!
-          </h2>
+          </p>
           <p className="mt-6 max-w-[440px] leading-relaxed text-gray-600">
             Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career
             journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new

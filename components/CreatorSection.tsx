@@ -9,7 +9,7 @@ export default function CreatorSection() {
   return (
     <section className="bg-[#FAFAFA] from-[#E6ECFF] via-white to-[#F3FBD8] py-24">
       <div className="mx-auto grid w-9/10 items-center gap-6 px-6 lg:grid-cols-2">
-        <div className="relative mx-auto h-[520px] w-full max-w-[480px]">
+        <div className="relative mx-auto h-[520px] w-full max-w-[700px] ">
           <div className="absolute left-0 top-0 w-[232px] h-[119px] rounded-2xl bg-[#0039DE] p-4 text-white shadow-lg">
             <p className="text-sm">Total Revenue</p>
             <p className="text-[10px] text-white/70">July 1-31</p>
@@ -26,11 +26,11 @@ export default function CreatorSection() {
             <span className="mt-2 inline-block rounded-full bg-[#C6F432] px-2 py-1 text-[10px] font-medium text-gray-900">+12$</span>
           </div>
           <Image
-            src="/images/student_female.png"
+            src="/creator/student_female.png"
             alt="Creator with headphones holding a tablet"
             width={800}
-            height={1000}
-            className="absolute bottom-5 left-1/2 h-auto w-[935px] -translate-x-1/2"
+            height={800}
+            className="absolute bottom-0 h-[596px] w-auto "
           />
           <Image src="/creator/squiggle_lime.svg" alt="" aria-hidden width={200} height={200} className="absolute right-3 top-[80px] w-[185px]" />
 
@@ -45,8 +45,8 @@ export default function CreatorSection() {
           </div>
         </div>
 
-        <div>
-          <h2 className="max-w-[360px] text-4xl font-semibold leading-tight text-gray-900">Create &amp; Manage Courses Easily.</h2>
+        <div className=" ml-5">
+          <h2 className="max-w-[360px] text-[25px] lg:text-[35px]  xl:text-[44px] font-semibold leading-tight text-[#242528]">Create &amp; Manage Courses Easily.</h2>
           <p className="mt-6 max-w-[460px] leading-relaxed text-gray-600">
             <strong className="text-gray-900">ByteSpace</strong> supports individuals or entities in the creation,
             publication, and administration of educational courses.

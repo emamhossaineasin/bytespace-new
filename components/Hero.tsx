@@ -1,19 +1,19 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import AvatarStack from "./AvatarStack";
 import Navbar from "./Navbar";
-import { useState, type FormEvent } from "react";
-import { useRouter } from "next/navigation";
 
 
 const shapes = [
-  { src: "/hero/squiggle-lime.svg", className: "left-0 top-[245px] w-[270px]" },
-  { src: "/hero/squiggle-white.png", className: "left-[215px] top-[477px] w-[175px]" },
-  { src: "/hero/ring-white.svg", className: "left-[60px] top-[700px] w-[340px]" },
-  { src: "/hero/cylinder-lime.svg", className: "right-0 top-[245px] w-[230px]" },
-  { src: "/hero/triangle_white.svg", className: "right-[175px] top-[522px] w-[188px]" },
-  { src: "/hero/squiggle_white_r_bottom.svg", className: "right-[70px] top-[700px] w-[330px]" },
+  { src: "/hero/squiggle-lime.svg", className: "left-0 lg:top-[245px] top-[200px] xl:w-[270px] lg:w-[200px] md:w-[150px] w-[100px]" },
+  { src: "/hero/squiggle-white.png", className: "xl:left-[215px] lg:left-[125px] top-[477px] xl:w-[175px] lg:w-[130px] md:w-[100px] w-[75px]" },
+  { src: "/hero/ring-white.svg", className: "left-[60px] top-[700px] xl:w-[340px] lg:w-[250px] md:w-[200px] w-[150px]" },
+  { src: "/hero/cylinder-lime.svg", className: "right-0 lg:top-[245px] top-[200px] xl:w-[230px] lg:w-[170px] md:w-[130px] w-[100px]" },
+  { src: "/hero/triangle_white.svg", className: "xl:right-[175px] lg:right-[80px] right-[40px] xl:top-[522px] lg:top-[500px] top-[500px] xl:w-[188px] lg:w-[140px] w-[100px]" },
+  { src: "/hero/squiggle_white_r_bottom.svg", className: "right-[70px] top-[700px] xl:w-[330px] lg:w-[245px] md:w-[180px] w-[135px]" },
 ];
 
 const avatars = [1, 2, 3, 4, 5, 6, 7].map((n) => `/hero/avatars/${n}.png`);
@@ -51,12 +51,15 @@ export default function Hero() {
 
       {/* Heading, subtext, search */}
       <div className="relative mx-auto max-w-[935px] px-6 pt-10 text-center md:pt-14">
-        <h1 className="font-Poppins text-4xl font-semibold leading-[1.15] text-white sm:text-5xl lg:text-[72px]">
+        <div className="">
+          <p className=" xl:text-[72px] lg:text-[56px] md:text-[48px] sm:text-[40px] text-[32px] font-semibold leading-[1.15] text-white sm:text-5xl">
           Get Access to Hundreds Courses Available
-        </h1>
-        <p className="font-Satoshi mx-auto mt-6 max-w-[935px] text-base text-[#E5E6E8] md:text-lg">
-          Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
-        </p>
+          </p>
+          <p className="font-Satoshi mx-auto mt-6 xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-base text-[#E5E6E8] lg:w-full md:w-[80%] sm:w-[90%] w-full">
+            Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
+          </p>
+        </div>
+        
         <div className="mt-12 md:mt-16 flex items-center w-[581px] mx-auto justify-center gap-4">
           <form onSubmit={handleSubmit} className="mt-6 flex w-[581px] gap-3">
               <input

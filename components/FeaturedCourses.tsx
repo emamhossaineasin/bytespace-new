@@ -12,7 +12,7 @@ export default function FeaturedCourses() {
   return (
     <section className="py-24 bg-white">
       <div className="mx-auto xl:w-9/10 px-6">
-        <p className="mx-auto max-w-[520px] text-center text-[44px] font-semibold leading-tight text-gray-900">
+        <p className="mx-auto max-w-[520px] text-center text-[44px] font-semibold leading-tight text-[#242528]">
           Discover Your Passion, Build Your Skills
         </p>
         <p className="mx-auto mt-5 max-w-[720px] text-center text-gray-500">

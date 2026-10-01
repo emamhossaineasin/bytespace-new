@@ -9,7 +9,7 @@ import Navbar from "./Navbar";
 
 const shapes = [
   { src: "/hero/squiggle-lime.svg", className: "left-0 lg:top-[245px] top-[200px] xl:w-[270px] lg:w-[200px] md:w-[150px] w-[100px]" },
-  { src: "/hero/squiggle-white.png", className: "xl:left-[215px] lg:left-[125px] top-[477px] xl:w-[175px] lg:w-[130px] md:w-[100px] w-[75px]" },
+  { src: "/hero/squiggle-white.svg", className: "xl:left-[215px] lg:left-[125px] top-[477px] xl:w-[175px] lg:w-[130px] md:w-[100px] w-[75px]" },
   { src: "/hero/ring-white.svg", className: "left-[60px] top-[700px] xl:w-[340px] lg:w-[250px] md:w-[200px] w-[150px]" },
   { src: "/hero/cylinder-lime.svg", className: "right-0 lg:top-[245px] top-[200px] xl:w-[230px] lg:w-[170px] md:w-[130px] w-[100px]" },
   { src: "/hero/triangle_white.svg", className: "xl:right-[175px] lg:right-[80px] right-[40px] xl:top-[522px] lg:top-[500px] top-[500px] xl:w-[188px] lg:w-[140px] w-[100px]" },

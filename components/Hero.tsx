@@ -84,7 +84,7 @@ export default function Hero() {
         <div className="absolute left-1/2 top-[35px] aspect-square w-[700px] -translate-x-1/2 rounded-full bg-[#C6F432] md:w-[1120px]" />
 
         <Image
-          src="/hero/student.png"
+          src="/images/student.png"
           alt="Smiling student with headphones holding a laptop"
           width={980}
           height={980}
